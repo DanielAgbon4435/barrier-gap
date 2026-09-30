@@ -1,0 +1,37 @@
+{
+  "contract": {
+    "spot": 100.0,
+    "strike": 100.0,
+    "barrier": 90.0,
+    "expiry_years": 1.0,
+    "rate": 0.02,
+    "diffusion_volatility": 0.2,
+    "jump_intensity_per_year": 0.5,
+    "jump_multiplier": 0.85
+  },
+  "black_scholes_price": 7.3004472653804235,
+  "jump_monte_carlo_price": 8.057172885290118,
+  "diffusion_hedge_sold_at_black_scholes": {
+    "mean": -0.053845243171107976,
+    "std": 0.28091198636856735,
+    "p05": -0.5029989548543066,
+    "p95": 0.3954363231083593,
+    "n_paths": 40000
+  },
+  "jump_hedge_sold_at_black_scholes": {
+    "mean": -0.9079002957786212,
+    "std": 1.769581707856803,
+    "p05": -4.989139809256539,
+    "p95": 0.2875505124271358,
+    "n_paths": 40000,
+    "fraction_gap_knockout": 0.146725,
+    "fraction_diffusion_knockout": 0.473575
+  },
+  "jump_hedge_sold_at_jump_price": {
+    "mean": -0.1358878043141733,
+    "std": 1.7695817078568028,
+    "p05": -4.217127317792091,
+    "p95": 1.0595630038915838,
+    "n_paths": 40000
+  }
+}
